@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Ordering App</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.deep_purple-amber.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+</head>
+<body>
+    <!-- Authentication Screen -->
+    <div id="auth-screen" class="mdl-layout mdl-js-layout">
+        <main class="mdl-layout__content">
+            <div class="auth-container">
+                <div class="mdl-card mdl-shadow--2dp">
+                    <div class="mdl-card__title">
+                        <h2 class="mdl-card__title-text">User Profile</h2>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                        <form id="auth-form">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input" type="text" id="name">
+                                <label class="mdl-textfield__label" for="name">Full Name</label>
+                            </div>
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input" type="email" id="email">
+                                <label class="mdl-textfield__label" for="email">Email</label>
+                            </div>
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input" type="tel" id="phone">
+                                <label class="mdl-textfield__label" for="phone">Phone Number</label>
+                            </div>
+                            <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+                                Continue to App
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Main App Layout -->
+    <div id="main-app" class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs" style="display: none;">
+        <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row">
+                <span class="mdl-layout-title">Food Ordering App</span>
+            </div>
+            <!-- Bottom Navigation -->
+            <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+                <a href="#home" class="mdl-layout__tab is-active">Home</a>
+                <a href="#search" class="mdl-layout__tab">Search</a>
+                <a href="#orders" class="mdl-layout__tab">Orders</a>
+                <a href="#profile" class="mdl-layout__tab">Profile</a>
+            </div>
+        </header>
+
+        <main class="mdl-layout__content">
+            <!-- Home Section -->
+            <section class="mdl-layout__tab-panel is-active" id="home">
+                <div class="page-content">
+                    <div class="food-categories">
+                        <!-- Food items will be dynamically added here -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Search Section -->
+            <section class="mdl-layout__tab-panel" id="search">
+                <div class="page-content">
+                    <div class="search-container">
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                            <input class="mdl-textfield__input" type="text" id="search-input">
+                            <label class="mdl-textfield__label" for="search-input">Search Food...</label>
+                        </div>
+                    </div>
+                    <div class="search-results">
+                        <!-- Search results will be dynamically added here -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Orders Section -->
+            <section class="mdl-layout__tab-panel" id="orders">
+                <div class="page-content">
+                    <div class="orders-list">
+                        <!-- Orders will be dynamically added here -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Profile Section -->
+            <section class="mdl-layout__tab-panel" id="profile">
+                <div class="page-content">
+                    <div class="profile-container">
+                        <!-- Profile details will be dynamically added here -->
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Order Dialog -->
+    <dialog class="mdl-dialog" id="order-dialog">
+        <h4 class="mdl-dialog__title">Place Order</h4>
+        <div class="mdl-dialog__content">
+            <form id="order-form">
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input" type="text" id="order-name">
+                    <label class="mdl-textfield__label" for="order-name">Full Name</label>
+                </div>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input" type="text" id="order-address">
+                    <label class="mdl-textfield__label" for="order-address">Current Address</label>
+                </div>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input" type="tel" id="order-phone">
+                    <label class="mdl-textfield__label" for="order-phone">Mobile Number</label>
+                </div>
+            </form>
+        </div>
+        <div class="mdl-dialog__actions">
+            <button type="button" class="mdl-button place-order">Place Order</button>
+            <button type="button" class="mdl-button close">Cancel</button>
+        </div>
+    </dialog>
+
+    <script src="app.js"></script>
+</body>
+</html>
