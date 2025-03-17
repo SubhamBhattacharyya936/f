@@ -1,6 +1,6 @@
 // Sample food data (this would typically come from a backend)
 let foodItems = [
-    { id: 1, name: 'Pizza Margherita', price: 12.99, image: 'https://via.placeholder.com/200x200?text=Pizza', category: 'Italian', description: 'Classic Italian pizza with tomatoes and mozzarella' },
+    { id: 1, name: 'Pizza Margherita', price: 12.99, image: 'https://i0.wp.com/cookingitalians.com/wp-content/uploads/2024/11/Margherita-Pizza.jpg?fit=1344%2C768&ssl=1/200x200?text=Pizza', category: 'Italian', description: 'Classic Italian pizza with tomatoes and mozzarella' },
     { id: 2, name: 'Cheeseburger', price: 8.99, image: 'https://via.placeholder.com/200x200?text=Burger', category: 'Fast Food', description: 'Juicy beef patty with cheese and fresh vegetables' },
     { id: 3, name: 'Sushi Roll', price: 15.99, image: 'https://via.placeholder.com/200x200?text=Sushi', category: 'Japanese', description: 'Fresh salmon and avocado roll' },
     { id: 4, name: 'Pad Thai', price: 11.99, image: 'https://via.placeholder.com/200x200?text=PadThai', category: 'Thai', description: 'Stir-fried rice noodles with shrimp' }
