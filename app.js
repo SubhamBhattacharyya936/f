@@ -1,9 +1,15 @@
 // Sample food data (this would typically come from a backend)
 let foodItems = [
     { id: 1, name: 'Pizza Margherita', price: 12.99, image: 'https://i0.wp.com/cookingitalians.com/wp-content/uploads/2024/11/Margherita-Pizza.jpg?fit=1344%2C768&ssl=1', category: 'Italian', description: 'Classic Italian pizza with tomatoes and mozzarella' },
-    { id: 2, name: 'Cheeseburger', price: 8.99, image: 'https://via.placeholder.com/200x200?text=Burger', category: 'Fast Food', description: 'Juicy beef patty with cheese and fresh vegetables' },
-    { id: 3, name: 'Sushi Roll', price: 15.99, image: 'https://via.placeholder.com/200x200?text=Sushi', category: 'Japanese', description: 'Fresh salmon and avocado roll' },
-    { id: 4, name: 'Pad Thai', price: 11.99, image: 'https://via.placeholder.com/200x200?text=PadThai', category: 'Thai', description: 'Stir-fried rice noodles with shrimp' }
+    { id: 2, name: 'Cheeseburger', price: 8.99, image: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80', category: 'Fast Food', description: 'Juicy beef patty with cheese and fresh vegetables' },
+    { id: 3, name: 'Sushi Roll', price: 15.99, image: 'https://images.unsplash.com/photo-1579871494447-9811cf80d66c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80', category: 'Japanese', description: 'Fresh salmon and avocado roll' },
+    { id: 4, name: 'Pad Thai', price: 11.99, image: 'https://images.unsplash.com/photo-1559314809-0d155014e29e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80', category: 'Thai', description: 'Stir-fried rice noodles with shrimp' },
+    { id: 5, name: 'Pasta Carbonara', price: 13.99, image: 'https://images.unsplash.com/photo-1612874742237-6526221588e3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80', category: 'Italian', description: 'Creamy pasta with pancetta and egg' },
+    { id: 6, name: 'California Roll', price: 14.99, image: 'https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80', category: 'Japanese', description: 'Crab, avocado, and cucumber roll' },
+    { id: 7, name: 'Green Curry', price: 12.99, image: 'https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80', category: 'Thai', description: 'Spicy coconut curry with vegetables' },
+    { id: 8, name: 'Chicken Wings', price: 9.99, image: 'https://images.unsplash.com/photo-1567620832903-9fc6debc209f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80', category: 'Fast Food', description: 'Crispy wings with choice of sauce' },
+    { id: 9, name: 'Tiramisu', price: 7.99, image: 'https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80', category: 'Italian', description: 'Classic coffee-flavored dessert' },
+    { id: 10, name: 'Miso Soup', price: 4.99, image: 'https://images.unsplash.com/photo-1578020190125-f4f7c18bc9cb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80', category: 'Japanese', description: 'Traditional Japanese soup with tofu' }
 ];
 
 let orders = [];
