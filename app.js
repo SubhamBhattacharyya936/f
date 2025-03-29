@@ -93,7 +93,7 @@ function displayFoodItems() {
                     <div class="mdl-card mdl-shadow--2dp food-item">
                         <div class="mdl-card__media">
                             <img src="${item.image}" alt="${item.name}">
-                            <div class="food-item-price">$${item.price.toFixed(2)}</div>
+                            <div class="food-item-price">₹${item.price.toFixed(2)}</div>
                         </div>
                         <div class="mdl-card__title">
                             <h2 class="mdl-card__title-text">${item.name}</h2>
@@ -124,7 +124,7 @@ function displaySearchResults(items) {
                 <div class="mdl-card mdl-shadow--2dp food-item">
                     <div class="mdl-card__media">
                         <img src="${item.image}" alt="${item.name}">
-                        <div class="food-item-price">$${item.price.toFixed(2)}</div>
+                        <div class="food-item-price">₹${item.price.toFixed(2)}</div>
                     </div>
                     <div class="mdl-card__title">
                         <h2 class="mdl-card__title-text">${item.name}</h2>
@@ -209,7 +209,7 @@ function displayOrders() {
                         <p><strong>Order ID:</strong> #${order.id}</p>
                         <p><strong>Delivery Address:</strong> ${order.user.address}</p>
                         <p><strong>Phone:</strong> ${order.user.phone}</p>
-                        <p><strong>Price:</strong> $${order.food.price.toFixed(2)}</p>
+                        <p><strong>Price:</strong> ₹${order.food.price.toFixed(2)}</p>
                         <p><strong>Status:</strong> ${order.status.charAt(0).toUpperCase() + order.status.slice(1)}</p>
                         <p><strong>Date:</strong> ${new Date(order.date).toLocaleDateString()}</p>
                     </div>
